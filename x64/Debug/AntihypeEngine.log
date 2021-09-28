@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\vladp\OneDrive\Рабочий стол\AntiHypeEngine\AntihypeEngine\AntihypeEngine\main.cpp(16,30): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\vladp\OneDrive\Рабочий стол\AntiHypeEngine\AntihypeEngine\AntihypeEngine\main.cpp(159,36): warning C4244: 'argument': conversion from 'GLsizeiptr' to 'GLsizei', possible loss of data
+C:\Users\vladp\OneDrive\Рабочий стол\AntiHypeEngine\AntihypeEngine\AntihypeEngine\main.cpp(142,11): warning C4101: 'renderer': unreferenced local variable
+  AntihypeEngine.vcxproj -> C:\Users\vladp\OneDrive\Рабочий стол\AntiHypeEngine\AntihypeEngine\x64\Debug\AntihypeEngine.exe
