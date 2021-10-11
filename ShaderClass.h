@@ -20,7 +20,7 @@ public:
 	Shader(const char* vertexFile, const char* fragmentFile);
 
 	// Activates the Shader Program
-	const void Activate(GLfloat *color);
+	const void Activate();
 	// Deletes the Shader Program
 	void Delete();
 

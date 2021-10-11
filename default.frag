@@ -1,12 +1,17 @@
 #version 330 core
-layout(location=0) out vec4 color;
 
-in vec2 v_TexCoord;
+// Outputs colors in RGBA
+out vec4 FragColor;
 
-uniform vec4 u_Color;
-//uniform sampler2D u_Texture;
+
+// Inputs the color from the Vertex Shader
+smooth in vec4 theColor;
+out vec4 outputColor;
+
 void main()
 {
-	//vec4 texColor = texture(u_Texture,v_TexCoord);
-	color = u_Color;
+	outputColor = theColor;
 };
+
+//uniform vec4 u_Color;
+//uniform sampler2D u_Texture;

@@ -59,6 +59,7 @@ Shader::Shader(const char* vertexFile, const char* fragmentFile)
 
 
 
+
 void Shader::SetUniform1i(const std::string& name, int value) {
 	glUniform1i(glGetUniformLocation(ID, name.c_str()), value);
 }
@@ -68,11 +69,11 @@ void Shader::SetUniformMat4f(const std::string& name, const glm::mat4& matrix) {
 	glUniformMatrix4fv(glGetUniformLocation(ID, name.c_str()), 1, GL_FALSE, &matrix[0][0]);
 }
 // Activates the Shader Program
-const void Shader::Activate(GLfloat *color)
+const void Shader::Activate()
 {
 	glUseProgram(ID);
-	int location = glGetUniformLocation(ID, "u_Color");
-	glUniform4f(location, color[0], color[1], color[2], color[3]);
+	//int location = glGetUniformLocation(ID, "u_Color");
+	//glUniform4f(location, color[0], color[1], color[2], color[3]);
 
 }
 

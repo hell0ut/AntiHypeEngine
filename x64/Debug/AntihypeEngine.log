@@ -1,5 +1,19 @@
 ﻿  main.cpp
-C:\Users\vladp\OneDrive\Рабочий стол\AntiHypeEngine\AntihypeEngine\AntihypeEngine\main.cpp(16,30): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\vladp\OneDrive\Рабочий стол\AntiHypeEngine\AntihypeEngine\AntihypeEngine\main.cpp(159,36): warning C4244: 'argument': conversion from 'GLsizeiptr' to 'GLsizei', possible loss of data
-C:\Users\vladp\OneDrive\Рабочий стол\AntiHypeEngine\AntihypeEngine\AntihypeEngine\main.cpp(142,11): warning C4101: 'renderer': unreferenced local variable
+C:\Users\vladp\OneDrive\Рабочий стол\AntiHypeEngine\AntihypeEngine\AntihypeEngine\main.cpp(38,30): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\vladp\OneDrive\Рабочий стол\AntiHypeEngine\AntihypeEngine\AntihypeEngine\main.cpp(184,14): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\vladp\OneDrive\Рабочий стол\AntiHypeEngine\AntihypeEngine\AntihypeEngine\main.cpp(187,14): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\vladp\OneDrive\Рабочий стол\AntiHypeEngine\AntihypeEngine\AntihypeEngine\main.cpp(192,14): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\vladp\OneDrive\Рабочий стол\AntiHypeEngine\AntihypeEngine\AntihypeEngine\main.cpp(195,14): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\vladp\OneDrive\Рабочий стол\AntiHypeEngine\AntihypeEngine\AntihypeEngine\main.cpp(200,14): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\vladp\OneDrive\Рабочий стол\AntiHypeEngine\AntihypeEngine\AntihypeEngine\main.cpp(203,14): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\vladp\OneDrive\Рабочий стол\AntiHypeEngine\AntihypeEngine\AntihypeEngine\main.cpp(216,25): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\vladp\OneDrive\Рабочий стол\AntiHypeEngine\AntihypeEngine\AntihypeEngine\main.cpp(220,25): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\vladp\OneDrive\Рабочий стол\AntiHypeEngine\AntihypeEngine\AntihypeEngine\main.cpp(229,25): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\vladp\OneDrive\Рабочий стол\AntiHypeEngine\AntihypeEngine\AntihypeEngine\main.cpp(233,25): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\vladp\OneDrive\Рабочий стол\AntiHypeEngine\AntihypeEngine\AntihypeEngine\main.cpp(242,25): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\vladp\OneDrive\Рабочий стол\AntiHypeEngine\AntihypeEngine\AntihypeEngine\main.cpp(246,25): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\vladp\OneDrive\Рабочий стол\AntiHypeEngine\AntihypeEngine\AntihypeEngine\main.cpp(273,43): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\vladp\OneDrive\Рабочий стол\AntiHypeEngine\AntihypeEngine\AntihypeEngine\main.cpp(376,26): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\vladp\OneDrive\Рабочий стол\AntiHypeEngine\AntihypeEngine\AntihypeEngine\main.cpp(377,26): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\vladp\OneDrive\Рабочий стол\AntiHypeEngine\AntihypeEngine\AntihypeEngine\main.cpp(378,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   AntihypeEngine.vcxproj -> C:\Users\vladp\OneDrive\Рабочий стол\AntiHypeEngine\AntihypeEngine\x64\Debug\AntihypeEngine.exe

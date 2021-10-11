@@ -17,8 +17,10 @@ GLfloat ORANGE[] = { 1.0f, 0.5f, 0.0f, 1.0f };//Orange
 GLfloat VIOLET[] = { 0.5f, 0.5f, 0.5f , 1.0f };//Violet
 #pragma endregion
 
+
+
 void Renderer::Draw(VAO& VAO, EBO& IBO, Shader& shader) {
-	shader.Activate(YELLOW);
+	shader.Activate();
 	// Bind the VAO so OpenGL knows to use it
 	VAO.Bind();
 	IBO.Bind();
