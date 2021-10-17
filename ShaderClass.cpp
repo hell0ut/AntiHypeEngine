@@ -1,4 +1,5 @@
 #include"ShaderClass.h"
+#include <vector>
 
 // Reads a text file and outputs a string with everything in the text file
 std::string get_file_contents(const char* filename)
@@ -12,7 +13,6 @@ std::string get_file_contents(const char* filename)
 		in.seekg(0, std::ios::beg);
 		in.read(&contents[0], contents.size());
 		in.close();
-		std::cout << contents;
 		return(contents);
 	}
 	throw(errno);
@@ -36,12 +36,40 @@ Shader::Shader(const char* vertexFile, const char* fragmentFile)
 	// Compile the Vertex Shader into machine code
 	glCompileShader(vertexShader);
 
+	GLint isCompiled = 0;
+	glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &isCompiled);
+	if (isCompiled == GL_FALSE) {
+		GLint maxLength = 0;
+		glGetShaderiv(vertexShader, GL_INFO_LOG_LENGTH, &maxLength);
+		// The maxLength includes the NULL character
+		std::vector<GLchar> errorLog(maxLength);
+		glGetShaderInfoLog(vertexShader, maxLength, &maxLength, &errorLog[0]);
+		for (char i : errorLog)
+			std::cout << i << ' ';
+	}
+
+
+
 	// Create Fragment Shader Object and get its reference
 	GLuint fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
 	// Attach Fragment Shader source to the Fragment Shader Object
 	glShaderSource(fragmentShader, 1, &fragmentSource, NULL);
 	// Compile the Vertex Shader into machine code
 	glCompileShader(fragmentShader);
+
+
+	isCompiled = 0;
+	glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &isCompiled);
+	if (isCompiled == GL_FALSE) {
+		GLint maxLength = 0;
+		glGetShaderiv(fragmentShader, GL_INFO_LOG_LENGTH, &maxLength);
+		// The maxLength includes the NULL character
+		std::vector<GLchar> errorLog(maxLength);
+		glGetShaderInfoLog(fragmentShader, maxLength, &maxLength, &errorLog[0]);
+		for (char i : errorLog)
+			std::cout << i << ' ';
+	}
+
 
 	// Create Shader Program Object and get its reference
 	ID = glCreateProgram();
@@ -68,6 +96,11 @@ void Shader::SetUniform1i(const std::string& name, int value) {
 void Shader::SetUniformMat4f(const std::string& name, const glm::mat4& matrix) {
 	glUniformMatrix4fv(glGetUniformLocation(ID, name.c_str()), 1, GL_FALSE, &matrix[0][0]);
 }
+
+
+
+
+
 // Activates the Shader Program
 const void Shader::Activate()
 {

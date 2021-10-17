@@ -159,6 +159,7 @@
   <ItemGroup>
     <None Include="default.frag" />
     <None Include="default.vert" />
+    <None Include="graph.vert" />
     <None Include="res\glm\detail\func_common.inl" />
     <None Include="res\glm\detail\func_common_simd.inl" />
     <None Include="res\glm\detail\func_exponential.inl" />
